@@ -11,17 +11,23 @@ import java.time.Duration;
 import com.planit.base.BaseClass;
 
 public class Util extends BaseClass {
-	public  WebDriver driver;
+	public static  WebDriver driver;
+	
+	
 
 	
-	public boolean elementExists(WebElement element) {
+	public Util() {
+		driver=getdriver();
+		// TODO Auto-generated constructor stub
+	}
+	public static boolean elementExists(WebElement element) {
 		if (element==null) {
 			return false;
 		}
 		return true;
 			
 		}
-	public boolean elementDoesNotExists(WebElement element) {
+	public static boolean elementDoesNotExists(WebElement element) {
 		if (element==null) {
 			return true;
 		}
@@ -30,19 +36,19 @@ public class Util extends BaseClass {
 		}
 	
 
-	public  void waitForThirtySeconds(WebElement element,WebDriver driver) {
+	public static void waitForThirtySeconds(WebElement element) {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(element)); // you can use any other By like id, cssselector, name,
 																// linktext etc
 	}
 
-	public  void clickUsingJavaScript(WebElement element, WebDriver driver) {
+	public static void clickUsingJavaScript(WebElement element) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
 
-	public  void scrollIntoView(WebElement element,WebDriver driver) {
+	public static void scrollIntoView(WebElement element) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].scrollIntoView(true);", element);
 	}

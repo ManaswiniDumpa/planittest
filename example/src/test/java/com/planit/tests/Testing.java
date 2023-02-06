@@ -20,7 +20,6 @@ public class Testing extends BaseClass {
 	public void TC01_errorMessagevalidation() throws InterruptedException {
 		WebDriver driver = BaseClass.getdriver();
 		HomePage homePage = new HomePage(driver);
-		Util util=new Util();
 		String ActualTitle = "Jupiter Toys";
 		String ExpectedTitle = driver.getTitle();
 		//Validating Title
@@ -34,7 +33,7 @@ public class Testing extends BaseClass {
 		Assert.assertTrue(contactPage.getSubmitButton().isDisplayed());
 		
 		//2. Click on submit button
-		util.clickUsingJavaScript(contactPage.getSubmitButton(),driver);
+		Util.clickUsingJavaScript(contactPage.getSubmitButton());
 		
 		//3. Validating error Messages
 		String expectedHeaderMessageIncomplete = contactPage.getHeaderMessageIncomplete().getText();
@@ -60,9 +59,9 @@ public class Testing extends BaseClass {
 		Thread.sleep(20000);
 		
 		//5.Validate errors are gone
-		Assert.assertFalse(util.elementDoesNotExists(contactPage.getForenameerror()));
-		Assert.assertFalse(util.elementDoesNotExists(contactPage.getEmailerror()));
-		Assert.assertFalse(util.elementDoesNotExists(contactPage.getMessageerror()));
+		Assert.assertFalse(Util.elementDoesNotExists(contactPage.getForenameerror()));
+		Assert.assertFalse(Util.elementDoesNotExists(contactPage.getEmailerror()));
+		Assert.assertFalse(Util.elementDoesNotExists(contactPage.getMessageerror()));
 		
 		
 		//6.Validate success message
@@ -80,7 +79,6 @@ public class Testing extends BaseClass {
 
 		WebDriver driver = BaseClass.getdriver();
 		HomePage homePage = new HomePage(driver);
-		Util util=new Util();
 		//Title Validation
 		String ActualTitle = "Jupiter Toys";
 		String ExpectedTitle = driver.getTitle();
@@ -109,13 +107,13 @@ public class Testing extends BaseClass {
 			contactPage.fillContactDetails(Forename, Surname, Email, Telephone, Message);
 
 			// submitting data by clicking on submit button
-			util.clickUsingJavaScript(contactPage.getSubmitButton(),driver);
+			Util.clickUsingJavaScript(contactPage.getSubmitButton());
 			Thread.sleep(15000);
 			//Success message validation
 			String actualSuccessMessage = contactPage.getSuccessMessage().getText();
 			String expectedSuccessMessage = "Thanks" + " " + Forename + ", we appreciate your feedback.";
 			Assert.assertEquals(actualSuccessMessage, expectedSuccessMessage);
-			util.clickUsingJavaScript(contactPage.getBackButton(),driver);
+			Util.clickUsingJavaScript(contactPage.getBackButton());
 
 		}
 

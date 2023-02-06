@@ -117,29 +117,29 @@ public class ContactPage extends BaseClass {
 	public void fillContactDetails(String Forename, String Surname, String Email, String Telephone, String Message) {
 
 		getForename().sendKeys(Forename);
-		util.waitForThirtySeconds(getForename(),driver);
+		Util.waitForThirtySeconds(getForename());
 		getSurname().sendKeys(Surname);
-		util.waitForThirtySeconds(getSurname(),driver);
+		Util.waitForThirtySeconds(getSurname());
 		getEmail().sendKeys(Email);
-		util.waitForThirtySeconds(getEmail(),driver);
+		Util.waitForThirtySeconds(getEmail());
 		getTelephone().sendKeys(Telephone);
-		util.waitForThirtySeconds(getTelephone(),driver);
+		Util.waitForThirtySeconds(getTelephone());
 		getMessage().sendKeys(Message);
-		util.waitForThirtySeconds(getMessage(),driver);
+		Util.waitForThirtySeconds(getMessage());
 
 	}
 
 	public void clearContactDetails(String Forename, String Surname, String Email, String Telephone, String Message) {
 		getForename().clear();
-		util.waitForThirtySeconds(getForename(),driver);
+		Util.waitForThirtySeconds(getForename());
 		getSurname().clear();
-		util.waitForThirtySeconds(getSurname(),driver);
+		Util.waitForThirtySeconds(getSurname());
 		getEmail().clear();
-		util.waitForThirtySeconds(getEmail(),driver);
+		Util.waitForThirtySeconds(getEmail());
 		getTelephone().clear();
-		util.waitForThirtySeconds(getTelephone(),driver);
+		Util.waitForThirtySeconds(getTelephone());
 		getMessage().clear();
-		util.waitForThirtySeconds(getMessage(),driver);
+		Util.waitForThirtySeconds(getMessage());
 
 	}
 }
