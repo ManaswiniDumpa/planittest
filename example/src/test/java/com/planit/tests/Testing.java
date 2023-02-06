@@ -17,7 +17,7 @@ import com.planit.util.Util;
 
 public class Testing extends BaseClass {
 	@Test
-	public void TC01_errorMessagevalidation() throws InterruptedException {
+	public void TC01_errorMessagevalidation() throws Exception {
 		WebDriver driver = BaseClass.getdriver();
 		HomePage homePage = new HomePage(driver);
 		String ActualTitle = "Jupiter Toys";
@@ -52,16 +52,19 @@ public class Testing extends BaseClass {
 		//4.Populating Mandatory fields
 		contactPage.getForename().sendKeys("test");
 		contactPage.getSurname().sendKeys("test");
-		contactPage.getEmail().sendKeys("test");
+		contactPage.getEmail().sendKeys("test@gmail.com");
 		contactPage.getTelephone().sendKeys("1234");
 		contactPage.getMessage().sendKeys("test");
+		
+		
+		//5.Validate errors are gone
+		Assert.assertFalse(Util.elementExists(contactPage.getForenameerror()));
+		Assert.assertFalse(Util.elementExists(contactPage.getEmailerror()));
+		Assert.assertFalse(Util.elementExists(contactPage.getMessageerror()));
+		
 		contactPage.getSubmitButton().click();
 		Thread.sleep(20000);
 		
-		//5.Validate errors are gone
-		Assert.assertFalse(Util.elementDoesNotExists(contactPage.getForenameerror()));
-		Assert.assertFalse(Util.elementDoesNotExists(contactPage.getEmailerror()));
-		Assert.assertFalse(Util.elementDoesNotExists(contactPage.getMessageerror()));
 		
 		
 		//6.Validate success message

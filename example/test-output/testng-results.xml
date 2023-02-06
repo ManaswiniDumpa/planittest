@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-05T15:24:28 AEDT" name="Default suite" finished-at="2023-02-05T15:27:31 AEDT" duration-ms="182631">
+  <suite started-at="2023-02-06T14:21:06 AEDT" name="Default suite" finished-at="2023-02-06T14:23:51 AEDT" duration-ms="165261">
     <groups>
     </groups>
-    <test started-at="2023-02-05T15:24:28 AEDT" name="Default test" finished-at="2023-02-05T15:27:31 AEDT" duration-ms="182631">
+    <test started-at="2023-02-06T14:21:06 AEDT" name="Default test" finished-at="2023-02-06T14:23:51 AEDT" duration-ms="165261">
       <class name="com.planit.tests.Testing">
-        <test-method signature="TC01_errorMessagevalidation()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-05T15:24:28 AEDT" name="TC01_errorMessagevalidation" finished-at="2023-02-05T15:25:11 AEDT" duration-ms="42541" status="PASS">
+        <test-method signature="TC01_errorMessagevalidation()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-06T14:21:06 AEDT" name="TC01_errorMessagevalidation" finished-at="2023-02-06T14:21:41 AEDT" duration-ms="34487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_errorMessagevalidation -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-05T15:25:11 AEDT" name="quit" finished-at="2023-02-05T15:25:11 AEDT" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-06T14:21:41 AEDT" name="quit" finished-at="2023-02-06T14:21:41 AEDT" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method signature="TC02_validMessageValidation()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-05T15:25:11 AEDT" name="TC02_validMessageValidation" finished-at="2023-02-05T15:26:55 AEDT" duration-ms="103926" status="PASS">
+        <test-method signature="TC02_validMessageValidation()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-06T14:21:41 AEDT" name="TC02_validMessageValidation" finished-at="2023-02-06T14:23:20 AEDT" duration-ms="98679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_validMessageValidation -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-05T15:26:55 AEDT" name="quit" finished-at="2023-02-05T15:26:56 AEDT" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-06T14:23:20 AEDT" name="quit" finished-at="2023-02-06T14:23:20 AEDT" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method signature="TC03_CartTotal()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-05T15:26:56 AEDT" name="TC03_CartTotal" finished-at="2023-02-05T15:27:31 AEDT" duration-ms="35201" status="PASS">
+        <test-method signature="TC03_CartTotal()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-06T14:23:20 AEDT" name="TC03_CartTotal" finished-at="2023-02-06T14:23:51 AEDT" duration-ms="31611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03_CartTotal -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-05T15:27:31 AEDT" name="quit" finished-at="2023-02-05T15:27:31 AEDT" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.planit.tests.Testing@4c1909a3]" started-at="2023-02-06T14:23:51 AEDT" name="quit" finished-at="2023-02-06T14:23:51 AEDT" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
